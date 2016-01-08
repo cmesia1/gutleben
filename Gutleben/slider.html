@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <title>Vídeos | GutLeben</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="GutLeben" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/jquery.countdown.css" />
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!----font-Awesome----->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!----font-Awesome----->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Ni idea!</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.html">GutLeben</a>
+	    </div>
+	    <!--/.navbar-header-->
+	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+	        <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		            <a href="../logout.php"><i class="fa fa-user"></i><span>Cerrar Sesión</span></a>
+		        </li>
+		</ul>
+		        </li>
+		    </ul>
+	    </div>
+	    <div class="clearfix"> </div>
+	  </div>
+	    <!--/.navbar-collapse-->
+</nav>
+<nav class="navbar nav_bottom" role="navigation">
+ <div class="container">
+ <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header nav_2">
+      <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+   </div> 
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+        <ul class="nav navbar-nav nav_1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Nosotros</a></li>
+    		<li class="dropdown mega-dropdown active">
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galería<span class="caret"></span></a>				
+				<div class="dropdown-menu mega-dropdown-menu">
+                    <div class="container-fluid">
+    				    <!-- Tab panes -->
+                       <div class="tab-content">
+                          <div class="tab-pane active" id="men">
+                            <ul class="nav-list list-inline">
+                                <li><a href="galeria.html"><img src="images/t7.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="galeria.html"><img src="images/t8.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="galeria.html"><img src="images/t9.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="galeria.html"><img src="images/t1.jpg" class="img-responsive" alt=""/></a></li>
+                            </ul>
+                          </div>
+                          <div class="tab-pane" id="women">
+                            <ul class="nav-list list-inline">
+                                <li><a href="slider.html"><img src="images/t1.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t2.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t3.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t4.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t5.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t6.jpg" class="img-responsive" alt=""/></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                       <li class="active"><a href="#men" role="tab" data-toggle="tab">Imágenes</a></li>
+                       <li><a href="#women" role="tab" data-toggle="tab">Vídeos</a></li>
+                    </ul>                    
+				</div>				
+			</li>
+			<li><a href="faculty.html">Patrocinadores</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Artículos<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="terms.html">Aportes de usuarios</a></li>
+                <li><a href="shortcodes.html">Aportes de empresas</a></li>
+                <li><a href="faq.html">Artículo de la semana</a></li>
+              </ul>
+            </li>
+            <li><a href="events.html">Agenda</a></li>
+            <li><a href="blog.html">Foro</a></li>
+            <li class="last"><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+   </div>
+</nav>
+
+
+
+    <!-- Insert to your webpage where you want to display the slider -->
+    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:640px;margin:0px auto 102px;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/V74HTkRH_Rg.jpg" alt="Vivir bien"  title="Vivir bien" />
+                <video preload="none" src="https://www.youtube.com/embed/V74HTkRH_Rg?v=V74HTkRH_Rg" ></video>
+                </li>
+                <li><img src="images/wI1KI3YSVn4.jpg" alt="Perdonar y ser feliz"  title="Perdonar y ser feliz" />
+                <video preload="none" src="https://www.youtube.com/embed/wI1KI3YSVn4?v=wI1KI3YSVn4" ></video>
+                </li>
+                <li><img src="images/xTmtU2kLJZc.jpg" alt="El sueño de nuestras madres."  title="El sueño de nuestras madres." />
+                <video preload="none" src="https://www.youtube.com/embed/xTmtU2kLJZc?v=xTmtU2kLJZc" ></video>
+                </li>
+                <li><img src="images/i6HKm5FFUhY.jpg" alt="Valora a tu familia, como ellos te valoran a ti."  title="Valora a tu familia, como ellos te valoran a ti." />
+                <video preload="none" src="https://www.youtube.com/embed/i6HKm5FFUhY?v=i6HKm5FFUhY" ></video>
+                </li>
+                <li><img src="images/t0xKQZTDsUw.jpg" alt="Ellas merecen saberlo."  title="Ellas merecen saberlo." />
+                <video preload="none" src="https://www.youtube.com/embed/t0xKQZTDsUw?v=t0xKQZTDsUw" ></video>
+                </li>
+                <li><img src="images/_IgNZlzaLXU.jpg" alt="Persevera."  title="Persevera." />
+                <video preload="none" src="https://www.youtube.com/embed/_IgNZlzaLXU?v=_IgNZlzaLXU" ></video>
+                </li>
+                <li><img src="images/yAcxrme5HGo.jpg" />
+                <video preload="none" src="https://www.youtube.com/embed/yAcxrme5HGo?v=yAcxrme5HGo" ></video>
+                </li>
+                <li><img src="images/y8cyTdG6Wfw.jpg" alt="Saluda"  title="Saluda" />
+                <video preload="none" src="https://www.youtube.com/embed/y8cyTdG6Wfw?v=y8cyTdG6Wfw" ></video>
+                </li>
+                <li><img src="images/M2IWiCRT19k.jpg" alt="Vocación"  title="Vocación" />
+                <video preload="none" src="https://www.youtube.com/embed/M2IWiCRT19k?v=M2IWiCRT19k" ></video>
+                </li>
+                <li><img src="images/zWLsaQn8eGA.jpg" alt="Trabajo"  title="Trabajo" />
+                <video preload="none" src="https://www.youtube.com/embed/zWLsaQn8eGA?v=zWLsaQn8eGA" ></video>
+                </li>
+                <li><img src="images/cLLUTyFtDk8.jpg" alt="Amor de padre"  title="Amor de padre" />
+                <video preload="none" src="https://www.youtube.com/embed/cLLUTyFtDk8?v=cLLUTyFtDk8" ></video>
+                </li>
+                <li><img src="images/J9a_1xwM5Ro.jpg" alt="Amor de padre2"  title="Amor de padre2" />
+                <video preload="none" src="https://www.youtube.com/embed/J9a_1xwM5Ro?v=J9a_1xwM5Ro" ></video>
+                </li>
+                <li><img src="images/DcsPaPV5mlk.jpg" alt="Amabilidad"  title="Amabilidad" />
+                <video preload="none" src="https://www.youtube.com/embed/DcsPaPV5mlk?v=DcsPaPV5mlk" ></video>
+                </li>
+                <li><img src="images/egEeWuGHVeY.jpg" alt="Honradez"  title="Honradez" />
+                <video preload="none" src="https://www.youtube.com/embed/egEeWuGHVeY?v=egEeWuGHVeY" ></video>
+                </li>
+                <li><img src="images/81IENZ4x748.jpg" alt="Puntualidad"  title="Puntualidad" />
+                <video preload="none" src="https://www.youtube.com/embed/81IENZ4x748?v=81IENZ4x748" ></video>
+                </li>
+                <li><img src="images/6VkdJVfvynw.jpg" alt="Transparencia"  title="Transparencia" />
+                <video preload="none" src="https://www.youtube.com/embed/6VkdJVfvynw?v=6VkdJVfvynw" ></video>
+                </li>
+                <li><img src="images/FZfCYOR8Tvc.jpg" alt="Perdonar"  title="Perdonar" />
+                <video preload="none" src="https://www.youtube.com/embed/FZfCYOR8Tvc?v=FZfCYOR8Tvc" ></video>
+                </li>
+                <li><img src="images/Biq70R1NPpw.jpg" alt="Hazte cargo"  title="Hazte cargo" />
+                <video preload="none" src="https://www.youtube.com/embed/Biq70R1NPpw?v=Biq70R1NPpw&list=PLNRFnBkKjR3KvBU1A3KmtF0RtyT73RfZl" ></video>
+                </li>
+                <li><img src="images/jeKY-JJwTDc.jpg" alt="Honestidad"  title="Honestidad" />
+                <video preload="none" src="https://www.youtube.com/embed/jeKY-JJwTDc?v=jeKY-JJwTDc" ></video>
+                </li>
+                <li><img src="images/Ai-ScweVNiE.jpg" alt="El amor de un padre..."  title="El amor de un padre..." />
+                <video preload="none" src="https://www.youtube.com/embed/Ai-ScweVNiE?v=Ai-ScweVNiE&list=PLSboeN42e0sSmhEYGxXDL6SbEN_WcHunW" ></video>
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="images/V74HTkRH_Rg-tn.jpg" alt="Vivir bien" title="Vivir bien" /></li>
+                <li><img src="images/wI1KI3YSVn4-tn.jpg" alt="Perdonar y ser feliz" title="Perdonar y ser feliz" /></li>
+                <li><img src="images/xTmtU2kLJZc-tn.jpg" alt="El sueño de nuestras madres." title="El sueño de nuestras madres." /></li>
+                <li><img src="images/i6HKm5FFUhY-tn.jpg" alt="Valora a tu familia, como ellos te valoran a ti." title="Valora a tu familia, como ellos te valoran a ti." /></li>
+                <li><img src="images/t0xKQZTDsUw-tn.jpg" alt="Ellas merecen saberlo." title="Ellas merecen saberlo." /></li>
+                <li><img src="images/_IgNZlzaLXU-tn.jpg" alt="Persevera." title="Persevera." /></li>
+                <li><img src="images/yAcxrme5HGo-tn.jpg" /></li>
+                <li><img src="images/y8cyTdG6Wfw-tn.jpg" alt="Saluda" title="Saluda" /></li>
+                <li><img src="images/M2IWiCRT19k-tn.jpg" alt="Vocación" title="Vocación" /></li>
+                <li><img src="images/zWLsaQn8eGA-tn.jpg" alt="Trabajo" title="Trabajo" /></li>
+                <li><img src="images/cLLUTyFtDk8-tn.jpg" alt="Amor de padre" title="Amor de padre" /></li>
+                <li><img src="images/J9a_1xwM5Ro-tn.jpg" alt="Amor de padre2" title="Amor de padre2" /></li>
+                <li><img src="images/DcsPaPV5mlk-tn.jpg" alt="Amabilidad" title="Amabilidad" /></li>
+                <li><img src="images/egEeWuGHVeY-tn.jpg" alt="Honradez" title="Honradez" /></li>
+                <li><img src="images/81IENZ4x748-tn.jpg" alt="Puntualidad" title="Puntualidad" /></li>
+                <li><img src="images/6VkdJVfvynw-tn.jpg" alt="Transparencia" title="Transparencia" /></li>
+                <li><img src="images/FZfCYOR8Tvc-tn.jpg" alt="Perdonar" title="Perdonar" /></li>
+                <li><img src="images/Biq70R1NPpw-tn.jpg" alt="Hazte cargo" title="Hazte cargo" /></li>
+                <li><img src="images/jeKY-JJwTDc-tn.jpg" alt="Honestidad" title="Honestidad" /></li>
+                <li><img src="images/Ai-ScweVNiE-tn.jpg" alt="El amor de un padre..." title="El amor de un padre..." /></li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="JavaScript Image Slideshow">JavaScript Image Slideshow</a></div>
+        </div>
+    </div>
+    <!-- End of body section HTML codes -->
+    
+</body>
+</html>

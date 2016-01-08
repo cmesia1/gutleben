@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Galería | GutLeben</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="GutLeben" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/jquery.countdown.css" />
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!----font-Awesome----->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!----font-Awesome----->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Ni idea!</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.html">GutLeben</a>
+	    </div>
+	    <!--/.navbar-header-->
+	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+	        <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		            <a href="../logout.php"><i class="fa fa-user"></i><span>Cerrar Sesión</span></a>
+		        </li>
+		</ul>
+		        </li>
+		    </ul>
+	    </div>
+	    <div class="clearfix"> </div>
+	  </div>
+	    <!--/.navbar-collapse-->
+</nav>
+<nav class="navbar nav_bottom" role="navigation">
+ <div class="container">
+ <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header nav_2">
+      <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+   </div> 
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+        <ul class="nav navbar-nav nav_1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Nosotros</a></li>
+    		<li class="dropdown mega-dropdown active">
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galería<span class="caret"></span></a>				
+				<div class="dropdown-menu mega-dropdown-menu">
+                    <div class="container-fluid">
+    				    <!-- Tab panes -->
+                       <div class="tab-content">
+                          <div class="tab-pane active" id="men">
+                            <ul class="nav-list list-inline">
+                                <li><a href="galeria.html"><img src="images/t7.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="galeria.html"><img src="images/t8.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="galeria.html"><img src="images/t9.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="galeria.html"><img src="images/t1.jpg" class="img-responsive" alt=""/></a></li>
+                            </ul>
+                          </div>
+                          <div class="tab-pane" id="women">
+                            <ul class="nav-list list-inline">
+                                <li><a href="slider.html"><img src="images/t1.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t2.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t3.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t4.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t5.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t6.jpg" class="img-responsive" alt=""/></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                       <li class="active"><a href="#men" role="tab" data-toggle="tab">Imágenes</a></li>
+                       <li><a href="#women" role="tab" data-toggle="tab">Vídeos</a></li>
+                    </ul>                    
+				</div>				
+			</li>
+			<li><a href="faculty.html">Patrocinadores</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Artículos<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="terms.html">Aportes de usuarios</a></li>
+                <li><a href="shortcodes.html">Aportes de empresas</a></li>
+                <li><a href="faq.html">Artículo de la semana</a></li>
+              </ul>
+            </li>
+            <li><a href="events.html">Agenda</a></li>
+            <li><a href="blog.html">Foro</a></li>
+            <li class="last"><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+   </div>
+</nav>
+<!-- banner -->
+  <div class="courses_banner">
+  	<div class="container">
+  		<h3>Galería de Imágenes</h3>
+  		<p class="description">
+            Tus valores definen quien eres realmente. Tu identidad real es la suma total de tus valores.-Assegid Habtewold.
+        </p>
+        <div class="breadcrumb1">
+            <ul>
+                <li class="icon6"><a href="index.html">Home</a></li>
+                <li class="current-page">Galería de imágenes</li>
+            </ul>
+        </div>
+  	</div>
+  </div>
+
+<div id="cp_widget_21af2980-008b-47bf-92f4-459eec8107fe">...</div><script type="text/javascript">
+var cpo = []; cpo["_object"] ="cp_widget_21af2980-008b-47bf-92f4-459eec8107fe"; cpo["_fid"] = "AwBAJIdqC9AX";
+var _cpmp = _cpmp || []; _cpmp.push(cpo);
+(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+var c = document.getElementsByTagName("script")[0];
+c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a href='http://www.cincopa.com/video-hosting'>Video Hosting for Business</a> solution.<span>New Gallery 2015/12/10</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 728</span><span>height</span><span> 546</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 728</span><span>height</span><span> 602</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 620</span><span>height</span><span> 420</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 625</span><span>height</span><span> 5919</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 500</span><span>height</span><span> 500</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>height</span><span> 720</span><span>width</span><span> 960</span><span>orientation</span><span> 1</span><span>camerasoftware</span><span> Adobe Photoshop CS6 </span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>height</span><span> 642</span><span>width</span><span> 1026</span><span>orientation</span><span> 1</span><span>camerasoftware</span><span> Adobe Photoshop CS3 </span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 520</span><span>height</span><span> 346</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1031</span><span>height</span><span> 454</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 700</span><span>height</span><span> 453</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 960</span><span>height</span><span> 640</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 554</span><span>height</span><span> 354</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>height</span><span> 452</span><span>width</span><span> 670</span><span>orientation</span><span> 1</span><span>camerasoftware</span><span> Adobe Photoshop CS5 </span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>height</span><span> 1000</span><span>width</span><span> 2000</span><span>orientation</span><span> 1</span><span>camerasoftware</span><span> Adobe Photoshop CS5 </span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 608</span><span>height</span><span> 803</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 706</span><span>height</span><span> 543</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 856</span><span>height</span><span> 598</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 649</span><span>height</span><span> 837</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 800</span><span>height</span><span> 445</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 378</span><span>height</span><span> 354</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 700</span><span>height</span><span> 467</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 624</span><span>height</span><span> 468</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 728</span><span>height</span><span> 486</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 600</span><span>height</span><span> 400</span></noscript>
+
+
+
+</body>
+</html>

@@ -1,0 +1,653 @@
+<?php include ("seguridad.php"); ?> 
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home | GutLeben</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="GutLeben" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/jquery.countdown.css" />
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!----font-Awesome----->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!----font-Awesome----->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Ni idea!</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.html">GutLeben</a>
+	    </div>
+	    <!--/.navbar-header-->
+	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+	        <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		            <a href="../logout.php"><i class="fa fa-user"></i><span>Cerrar Sesión</span></a>
+		        </li>
+		</ul>
+		        </li>
+		    </ul>
+	    </div>
+	    <div class="clearfix"> </div>
+	  </div>
+	    <!--/.navbar-collapse-->
+</nav>
+<nav class="navbar nav_bottom" role="navigation">
+ <div class="container">
+ <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header nav_2">
+      <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+   </div> 
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+        <ul class="nav navbar-nav nav_1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Nosotros</a></li>
+    		<li class="dropdown mega-dropdown active">
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galería<span class="caret"></span></a>				
+				<div class="dropdown-menu mega-dropdown-menu">
+                    <div class="container-fluid">
+    				    <!-- Tab panes -->
+                       <div class="tab-content">
+                          <div class="tab-pane active" id="men">
+                            <ul class="nav-list list-inline">
+                                <li><a href="galeria.html"><img src="images/t7.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="galeria.html"><img src="images/t8.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="galeria.html"><img src="images/t9.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="galeria.html"><img src="images/t1.jpg" class="img-responsive" alt=""/></a></li>
+                            </ul>
+                          </div>
+                          <div class="tab-pane" id="women">
+                            <ul class="nav-list list-inline">
+                                <li><a href="slider.html"><img src="images/t1.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t2.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t3.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t4.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t5.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="slider.html"><img src="images/t6.jpg" class="img-responsive" alt=""/></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                       <li class="active"><a href="#men" role="tab" data-toggle="tab">Imágenes</a></li>
+                       <li><a href="#women" role="tab" data-toggle="tab">Vídeos</a></li>
+                    </ul>                    
+				</div>				
+			</li>
+			<li><a href="faculty.html">Patrocinadores</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Artículos<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="blog.html">Aportes de usuarios</a></li>
+                <li><a href="shortcodes.html">Aportes de empresas</a></li>
+                <li><a href="faq.html">Artículo de la semana</a></li>
+              </ul>
+            </li>
+            <li><a href="events.html">Agenda</a></li>
+            <li><a href="blog.html">Foro</a></li>
+            <li class="last"><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+   </div>
+</nav>
+<!-- banner -->
+	<div class="banner">
+			<!-- banner Slider starts Here -->
+					<script src="js/responsiveslides.min.js"></script>
+					 <script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider3").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: true,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+					
+						});
+					  </script>
+					<!--//End-slider-script -->
+					<div  id="top" class="callbacks_container">
+						<ul class="rslides" id="slider3">
+							<li>
+								<div class="banner-bg">
+									<div class="container">
+										<div class="banner-info">
+											<h3>Bienvenidos</span></h3>
+											<p>Inspirado en promover una cultura con valores 
+											</p>
+											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>Imagenes</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="banner-bg banner-img2">
+									<div class="container">
+										<div class="banner-info">
+											<h3>Stay in touch<span>Lo más leído</span></h3>
+											<p>lalala1.
+											</p>
+											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>Ver los cursos</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="banner-bg banner-img">
+									<div class="container">
+										<div class="banner-info">
+											<h3>ESTA EN INDEX H3! </span></h3>
+											<p>AQUI DEJA ESPACIO
+												Y VUELVE A ESCRIBIR-INDEX!!!.
+											</p>
+											<a href="events.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>Ver próximos eventos</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="banner-bg">
+									<div class="container">
+										<div class="banner-info">
+											<h3>Poner H3 parte2<span>sigue H3 parte2</span></h3>
+											<p>Inspirado en H3 index!
+												continua aqui.
+											</p>
+											<a href="events.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>Ver próximo eventos</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="banner-bg banner-img2">
+									<div class="container">
+										<div class="banner-info">
+											<h3> trivial example,<span>Quién escoge!</span></h3>
+											<p>parrafo que no entiendo4
+												parrafo que no entiendo - sigue
+											</p>
+											<a href="events.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>Ver próximo eventos</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							
+						</ul>
+		          </div>
+	</div>
+	<!-- //banner -->
+	<div class="details">
+       <div class="container">
+		 <div class="col-sm-10 dropdown-buttons">   
+			<div class="col-sm-3 dropdown-button">           			
+    		  <div class="input-group">
+                <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Name" type="text" required="">
+              </div>
+			</div>
+			<div class="col-sm-3 dropdown-button">           			
+    		  <div class="input-group">
+                <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Email" type="text" required="">
+              </div>
+			</div>
+    	   <div class="col-sm-3 dropdown-button">           			
+    		  <div class="section_1">
+				 <select id="country" onchange="change_country(this.value)" class="frm-field required">
+					<option value="null">Nivel de aprendizaje</option>
+					<option value="null">Grande</option>         
+					<option value="AX">Avanzado</option>
+					<option value="AX">Intermedio</option>
+				 </select>
+			  </div>
+			</div>
+		     <div class="col-sm-3 dropdown-button">
+			  <div class="section_1">
+				 <select id="country" onchange="change_country(this.value)" class="frm-field required">
+					<option value="null">Cursos?</option>
+					<option value="null">Finanzas?</option>         
+					<option value="AX">Marketing</option>
+					<option value="AX">Ciencia</option>
+				 </select>
+			  </div>
+			 </div>
+			 <div class="clearfix"> </div>
+		  </div> 
+		  <div class="col-sm-2 submit_button"> 
+		   	  <form>
+		   	     <input type="submit" value="Search">
+		   	  </form>
+		   </div>
+		   <div class="clearfix"> </div>
+	     </div>
+     </div>
+     <div class="grid_1">
+     	<div class="container">
+     		<div class="col-md-4">
+                <div class="news">
+                    <h1>News</h1>
+                    <div class="section-content">
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>07-25-2015</figure>
+                            <a href="#">Lalala2.</a>
+                        </article>
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
+                            <a href="#">Lalala3.</a>
+                        </article>
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
+                            <a href="#">Lalala4.</a>
+                        </article>
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
+                            <a href="#">Lalala5.</a>
+                        </article>
+                        
+                    </div><!-- /.section-content -->
+                    <a href="#" class="read-more">Lo último</a>
+                </div><!-- /.news-small -->
+            </div>
+            <div class="col-md-8 grid_1_right">
+              <h2>Programs</h2>
+		      <div class="but_list">
+		       <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+				<ul id="myTab" class="nav nav-tabs nav-tabs1" role="tablist">
+				  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Day 1&nbsp;&nbsp;&nbsp;31-08-2015</a></li>
+				  <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Day 2&nbsp;&nbsp;&nbsp;01-09-2015</a></li>
+				  <li role="presentation"><a href="#profile1" role="tab" id="profile-tab1" data-toggle="tab" aria-controls="profile1">Day 3&nbsp;&nbsp;&nbsp;05-09-2015</a></li>
+				</ul>
+			<div id="myTabContent" class="tab-content">
+			  <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+			    <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Lalala5</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lalala6!</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">Bienvenido a la introducción</a></h3>
+						  <p>Lalala7. <a href="#">Leer más</a></p>
+						  <img src="images/t9.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			   </div>
+			   <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Lalala8</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lalala9</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">Bienvenida e Introducción</a></h3>
+						  <p>Lalala10 <a href="#">Leer más</a></p>
+						  <img src="images/t5.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			   </div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+			    <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Lalala11</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lalala12</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">Bienvenida e introducción3</a></h3>
+						  <p>Lalala13 <a href="#">Read More</a></p>
+						  <img src="images/t8.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			   </div>
+			   <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Lalala14</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lalala15</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">Bienvenida e introducción4</a></h3>
+						  <p>Lalala16 <a href="#">Leer más</a></p>
+						  <img src="images/t2.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			   </div>
+			</div>
+			<div role="tabpanel" class="tab-pane fade" id="profile1" aria-labelledby="profile-tab1">
+			    <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Lalala17</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lalala18</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">Bienvenida e introducción5</a></h3>
+						  <p>Lalala19 <a href="#">Leer más</a></p>
+						  <img src="images/t7.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			   </div>
+			   <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Lalala20</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lalala21</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">Bienvenida e introducción6</a></h3>
+						  <p>Lalala22.... <a href="#">Leer más</a></p>
+						  <img src="images/t4.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			    </div>
+			   </div>
+		     </div>
+		    </div>
+		   </div>
+      </div>
+      <div class="clearfix"> </div>
+     </div>
+    </div>
+    <div class="bg">
+     	<div class="container">
+     		<div class="timer_wrap">
+				<div id="counter"> </div>		
+			</div> 
+			<div class="newsletter">
+			  <form>
+				<input type="text" name="ne" size="30" required="" placeholder="Por favor, completa tu email!">
+				<input type="submit" value="Subscribe!!">
+			  </form>
+            </div>
+        </div>
+   </div>
+   <div class="bottom_content">  
+   	 <h3>Nuestros Proyectos!</h3>
+     <div class="grid_2">
+     	<div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t15.jpg" class="img-responsive" alt=""/>
+                <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lalala23</a></h4>
+               <p>Lalala24</p>
+                <span>
+                  <a href="students.html">Estudios! students.html!! </a>
+                  <a href="students.html">Estudios de colegio! students.html!!</a>
+                </span>
+                <a href="events.html">
+                    <span><i class="fa fa-chain chain_1"></i>Ver Proyectos!!</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t10.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lalala25</a></h4>
+               <p>Lalala26</p>
+               <span>
+                  <a href="students.html">Estudios!2 students.html!! </a>
+                  <a href="students.html">Estudios de colegio!2 students.html!!</a>
+                </span>
+                <a href="events.html">
+                    <span><i class="fa fa-chain chain_1"></i>Ver Proyectos!!!</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t12.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lalala26</a></h4>
+               <p>Lalala27</p>
+               <span>
+                  <a href="students.html">3Estudios! students.html!! </a>
+                  <a href="students.html">3Estudios de colegio! students.html!!</a>
+                </span>
+                <a href="events.html">
+                    <span><i class="fa fa-chain chain_1"></i>Ver proyectos!!</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+     </div>
+     <div class="grid_3">
+     	<div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t11.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lalala27</a></h4>
+               <p>Lalala28</p>
+                <span>
+                  <a href="students.html">4Estudios! students.html!! </a>
+                  <a href="students.html">4Estudios de colegio! students.html!!</a>
+                </span>
+                <a href="events.html">
+                    <span><i class="fa fa-chain chain_1"></i>Ver proyectos!!!!</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t14.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lalala29</a></h4>
+               <p>Lalala30</p>
+               <span>
+                  <a href="students.html">5Estudios! students.html!! </a>
+                  <a href="students.html">5Estudios de colegio! students.html!!</a>
+                </span>
+                <a href="events.html">
+                    <span><i class="fa fa-chain chain_1"></i>Ver proyectos!!!!!!</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t13.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lalala31</a></h4>
+               <p>Lalala31</p>
+               <span>
+                  <a href="students.html">6Estudios! students.html!! </a>
+                  <a href="students.html">6Estudios de colegio! students.html!!</a>
+                </span>
+                <a href="events.html">
+                    <span><i class="fa fa-chain chain_1"></i>Ver proyectos</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+     </div>
+    </div>
+    <div class="footer">
+    	<div class="container">
+    		<div class="col-md-3 grid_4">
+    		   <h3>Nosotros!</h3>	
+    		   <p>"Lalala32.."</p>
+    		      <ul class="social-nav icons_2 clearfix">
+                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="facebook"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+                 </ul>
+    		</div>
+    		<div class="col-md-3 grid_4">
+    		   <h3>Quick Links</h3>
+    			<ul class="footer_list">
+    				<li><a href="#">-  LOLOLO1 </a></li>
+    				<li><a href="#">-  LOLOLO2</a></li>
+    				<li><a href="#">-  LOLOLO3</a></li>
+    				<li><a href="#">-  LOLOLO4</a></li>
+    				<li><a href="#">-   LOLOLO5</a></li>
+    			</ul>
+    		</div>
+    		<div class="col-md-3 grid_4">
+    		   <h3>Contáctenos</h3>
+    			<address>
+                    <strong>Lululu1</strong>
+                    <br>
+                    <span>Lululu2</span>
+                    <br><br>
+                    <span>Lululu3</span>
+                    <br>
+                    <abbr>Lululu4</abbr> +1 (734) 123-4567
+                    <br>
+                    <abbr>Email : </abbr> <a href="mailto@example.com">info(at)carolmesia.com</a>
+               </address>
+    		</div>
+    		<div class="col-md-3 grid_4">
+    		   <h3>Horas para atender!!!</h3>
+    			 <table class="table_working_hours">
+		        	<tbody>
+		        		<tr class="opened_1">
+							<td class="day_label">monday</td>
+							<td class="day_value">9:30 am - 6.00 pm</td>
+						</tr>
+					    <tr class="opened">
+							<td class="day_label">tuesday</td>
+							<td class="day_value">9:30 am - 6.00 pm</td>
+						</tr>
+					    <tr class="opened">
+							<td class="day_label">wednesday</td>
+							<td class="day_value">9:30 am - 6.00 pm</td>
+						</tr>
+					    <tr class="opened">
+							<td class="day_label">thursday</td>
+							<td class="day_value">9:30 am - 6.00 pm</td>
+						</tr>
+					    <tr class="opened">
+							<td class="day_label">friday</td>
+							<td class="day_value">9:30 am - 3.00 pm</td>
+						</tr>
+					    <tr class="closed">
+							<td class="day_label">saturday</td>
+							<td class="day_value closed"><span>Cerrado</span></td>
+						</tr>
+					    <tr class="closed">
+							<td class="day_label">sunday</td>
+							<td class="day_value closed"><span>Cerrado</span></td>
+						</tr>
+				    </tbody>
+				</table>
+            </div>
+    		<div class="clearfix"> </div>
+    		<div class="copy">
+		       <p>Copyright © 2015 GutLeben . All Rights Reserved  | Design by <a href="http://carolmesia.com/" target="_blank">Carol Mesía</a> </p>
+	        </div>
+    	</div>
+    </div>
+<script src="js/jquery.countdown.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>	
