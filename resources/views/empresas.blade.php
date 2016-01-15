@@ -147,4 +147,5 @@
     </ul>
 </div>
 </div>
+    <?php $name; ?>
     @endsection

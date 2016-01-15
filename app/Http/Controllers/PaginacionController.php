@@ -41,7 +41,7 @@ class PaginacionController extends Controller
     }
     public function agenda()
     {
-        //
+        return view('eventos');
     }
     public function foro()
     {
@@ -50,7 +50,7 @@ class PaginacionController extends Controller
 
     public function contacto()
     {
-        //
+        return view('contacto');
     }
 
 }

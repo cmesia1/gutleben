@@ -18,3 +18,5 @@ Route::get('/','PaginacionController@index');
 Route::get('nosotros','PaginacionController@nosotros');
 Route::get('galeria','PaginacionController@galeria');
 Route::get('patrocinadores','PaginacionController@patrocinadores');
+Route::get('eventos','PaginacionController@agenda');
+Route::get('contacto','PaginacionController@contacto');
